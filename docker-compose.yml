@@ -13,7 +13,7 @@ services:
     networks:
       - kf-shared-network
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8888/spring-boot-config/default" ]
+      test: [ "CMD", "curl", "-f", "http://localhost:8888/application/default" ]
       interval: 30s
       timeout: 10s
       retries: 5
